@@ -1,0 +1,36 @@
+{
+  "name": "on-frame",
+  "version": "1.0.0",
+  "description": "Batches calls to requestAnimationFrame",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "prepublishOnly": "npm format && npm run lint",
+    "preversion": "npm format && npm run lint",
+    "build": "tsc",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "raf",
+    "requestAnimationFrame",
+    "onFrame"
+  ],
+  "author": {
+    "name": "Christian de Wit",
+    "email": "mail@christiandewit.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  }
+}
