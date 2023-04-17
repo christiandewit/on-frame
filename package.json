@@ -1,6 +1,10 @@
 {
   "name": "on-frame",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christiandewit/on-frame"
+  },
   "description": "Batches calls to requestAnimationFrame",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
