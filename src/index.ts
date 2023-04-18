@@ -43,3 +43,61 @@ function callback(time: DOMHighResTimeStamp) {
     rafId = requestAnimationFrame(callback);
   }
 }
+
+// tests
+/* c8 ignore start */
+if (import.meta.vitest) {
+  const { test, expect, describe } = import.meta.vitest;
+
+  describe('Initial state', () => {
+    test('Initial size of subscribers', () => {
+      expect(subscribers.size).toBe(0);
+    });
+
+    test('Initial value of rafId ', () => {
+      expect(rafId).toBe(null);
+    });
+  });
+
+  test('Size of subscribers after subscribing', () => {
+    function callback() {
+      // noop
+    }
+    const unsubscribe = onFrame(callback);
+    expect(subscribers.size).toBe(1);
+    unsubscribe();
+  });
+
+  test('Size of subscribers after subscribing and immediately unsubscribing', () => {
+    function callback() {
+      // noop
+    }
+    const unsubscribe = onFrame(callback);
+    unsubscribe();
+
+    expect(subscribers.size).toBe(0);
+  });
+
+  test('Value of rafId after subscribing', () => {
+    function callback() {
+      // noop
+    }
+    const unsubscribe = onFrame(callback);
+
+    expect(rafId).toBeTypeOf('number');
+
+    unsubscribe();
+  });
+
+  test('Value of rafId after subscribing and immediately unsubscribing', () => {
+    function callback() {
+      // noop
+    }
+    const unsubscribe = onFrame(callback);
+
+    unsubscribe();
+
+    expect(rafId).toBe(null);
+  });
+}
+/* c8 ignore stop */

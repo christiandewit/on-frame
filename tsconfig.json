@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "es6",
-    "declaration": true,
-    "outDir": "./lib",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "types": ["vitest/importMeta"],
+    "esModuleInterop": true
   },
   "include": ["src"]
 }
