@@ -1,8 +1,8 @@
 # on-frame
 
-![npm (scoped)](https://img.shields.io/npm/v/@amate/on-frame)
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@amate/on-frame)
-![NPM](https://img.shields.io/npm/l/@amate/on-frame)
+[![npm (scoped)](https://img.shields.io/npm/v/@amate/on-frame)](https://www.npmjs.com/package/@amate/on-frame)
+[![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@amate/on-frame)](https://bundlephobia.com/package/@amate/on-frame)
+[![NPM](https://img.shields.io/npm/l/@amate/on-frame)](https://github.com/christiandewit/on-frame/blob/main/LICENSE.md)
 
 Batches calls to requestAnimationFrame
 
