@@ -20,8 +20,8 @@
   ],
   "scripts": {
     "prepare": "npm run build",
-    "prepublishOnly": "npm format && npm run lint",
-    "preversion": "npm format && npm run lint",
+    "prepublishOnly": "npm run format && npm run lint",
+    "preversion": "npm run format && npm run lint",
     "build": "vite build",
     "lint": "eslint .",
     "format": "prettier --write .",
