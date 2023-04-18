@@ -7,11 +7,11 @@
   },
   "description": "Batches calls to requestAnimationFrame",
   "main": "./dist/on-frame.umd.cjs",
-  "module": "./dist/on-frame.js",
+  "module": "./dist/on-frame.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/on-frame.js",
+      "import": "./dist/on-frame.mjs",
       "require": "./dist/on-frame.umd.cjs"
     }
   },
