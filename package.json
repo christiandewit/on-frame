@@ -26,12 +26,14 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "test": "vitest run --reporter verbose",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "bench": "vitest bench --run"
   },
   "keywords": [
     "raf",
     "requestAnimationFrame",
-    "onFrame"
+    "onFrame",
+    "animation"
   ],
   "author": {
     "name": "Christian de Wit",

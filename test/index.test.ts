@@ -1,4 +1,4 @@
-import { expect, test, vi } from 'vitest';
+import { bench, expect, test, vi } from 'vitest';
 import { onFrame } from '../src/index';
 
 test('Subscribe', async () => {
