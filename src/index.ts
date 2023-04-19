@@ -78,6 +78,18 @@ if (import.meta.vitest) {
     expect(subscribers.size).toBe(0);
   });
 
+  test('Size of subscribers after subscribing the same function twice', () => {
+    function callback() {
+      // noop
+    }
+    const unsubscribe = onFrame(callback);
+    onFrame(callback);
+
+    expect(subscribers.size).toBe(1);
+
+    unsubscribe();
+  });
+
   test('Value of rafId after subscribing', () => {
     function callback() {
       // noop
