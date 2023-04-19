@@ -37,5 +37,3 @@ const unsubscribe = onFrame((time) => {
   }
 });
 ```
-
-
